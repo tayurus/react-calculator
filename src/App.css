@@ -14,7 +14,6 @@
 
 .App__controls{
     display: flex;
-    align-items: flex-start;
     height: 100%;
     text-align: center;
     font-size: 2.5vw;
@@ -44,9 +43,20 @@
      grid-template-rows: 7vw 7vw 7vw 7vw;
 }
 
+.App__operations-extend{
+    background-color: #1de9b6;
+    width: 35%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #117a65;
+    font-weight: bold;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 7vw 7vw 7vw;
+}
 
 
-.App__digits div:hover, .App__operations div:hover{
+.App__digits div:hover, .App__operations div:hover, .App__operations-extend div:hover{
     cursor: pointer;
     color: tomato;
 }
