@@ -1,28 +1,52 @@
-.App {
-  text-align: center;
+.App{
+    min-height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App__expression, .App__result{
+    padding: 0vw 2vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 8vw;
+    color: #5e5e5e;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App__controls{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    text-align: center;
+    font-size: 2.5vw;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App__digits{
+    width: 40%;
+    background-color: #636363;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7vw 7vw 7vw 7vw;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
 }
 
-.App-intro {
-  font-size: large;
+.App__operations{
+    width: 25%;
+    background-color: #434343;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 7vw 7vw 7vw 7vw;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+
+.App__digits div:hover, .App__operations div:hover{
+    cursor: pointer;
+    color: tomato;
 }
