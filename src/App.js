@@ -39,6 +39,7 @@ class App extends Component {
                 newState["expression"] = newState["expression"].substring(0, symbolsLeftCount);
                 break;
             case "=": {
+                newState["expression"] = newState["result"];
                 newState["result"] = "";
                 break;
             }
